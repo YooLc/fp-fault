@@ -34,7 +34,7 @@ void do_test(test_func test) {
   double subnormal_duration = time_end - time_start;
   printf("Time: %.2lf s, Result: %.6lf\n", subnormal_duration, res);
   printf(">> Result: Reached %.2lf%% performance <<<\n",
-         subnormal_duration / normal_duration * 100);
+         normal_duration / subnormal_duration * 100);
 }
 
 int main() {
