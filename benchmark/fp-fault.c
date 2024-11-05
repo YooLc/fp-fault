@@ -11,5 +11,6 @@ int main() {
   // mxcsr_readable();
 
   mul_benchmark();
+  add_benchmark();
   return 0;
 }

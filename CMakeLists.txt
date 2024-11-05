@@ -14,6 +14,7 @@ set(SRC_FILES
     ${PROJECT_SOURCE_DIR}/arch/x86/mul_x87.s
     ${PROJECT_SOURCE_DIR}/benchmark/fp-fault.c
     ${PROJECT_SOURCE_DIR}/benchmark/operator/mul.c
+    ${PROJECT_SOURCE_DIR}/benchmark/operator/add.c
     ${PROJECT_SOURCE_DIR}/benchmark/benchmark.c
     ${PROJECT_SOURCE_DIR}/driver/x87.c
     ${PROJECT_SOURCE_DIR}/driver/mxcsr.c

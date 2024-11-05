@@ -27,6 +27,7 @@ typedef struct TestSettings {
 
 typedef double (*test_func)(double, double, uint64_t);
 
+void add_benchmark();
 void mul_benchmark();
 double do_test(test_func test, TestSettings setting);
 
