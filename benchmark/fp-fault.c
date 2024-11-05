@@ -3,6 +3,7 @@
 
 #include "common.h"
 #include "operator.h"
+#include "driver.h"
 
 void do_test(test_func test) {
   struct timeval global_tv;
@@ -38,6 +39,11 @@ void do_test(test_func test) {
 }
 
 int main() {
+  fpcw_readable();
+  mxcsr_set_daz();
+  mxcsr_set_ftz();
+  mxcsr_readable();
+  
   printf(">>> Tesing on x87 <<<\n");
   do_test(mul_x87);
   printf("\n>>> Tesing on SSE <<<\n");

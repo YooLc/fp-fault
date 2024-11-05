@@ -1,3 +1,4 @@
 .vscode/
 build/
 *.tar.gz
+.gdb_history
