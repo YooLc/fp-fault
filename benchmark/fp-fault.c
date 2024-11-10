@@ -5,10 +5,8 @@
 #include "driver.h"
 
 int main() {
-  // fpcw_readable();
-  // mxcsr_set_daz();
-  // mxcsr_set_ftz();
-  // mxcsr_readable();
+  fpcw_readable();
+  mxcsr_readable();
 
   mul_benchmark();
   add_benchmark();

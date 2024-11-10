@@ -19,6 +19,7 @@
 #define MASK_D (1 << 1)
 #define MASK_I 1
 
+#define FPCW_X  (1 << 11)
 #define FPCW_RC (0b11 << 10)
 #define FPCW_PC (0b11 << 8)
 #define FPCW_MASK (0b111111)
@@ -30,6 +31,9 @@
 #define MXCSR_EXCEPT 0b111111
 
 // x87 FPU Control and Status Register
+void fpcw_set_inf_control();
+void fpcw_clear_inf_control();
+uint16_t fpcw_get_inf_control();
 void fpcw_set_round_control(uint16_t mode);
 uint16_t fpcw_get_round_control();
 void fpcw_set_precision_control(uint16_t mode);
