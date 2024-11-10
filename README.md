@@ -1,5 +1,9 @@
 # Intel CPU x87 浮点数性能异常的分析 - 实验代码
 
+实验报告: [report.md](report.md)
+
+为了防止反作弊机制，公布我提交的作业 `.zip` 文件的 SHA 256 哈希值为: `1576c7e14cc9ed90d9d4f4c86a82e35058af0ac4c99a247b173064ef640fbcf5`
+
 ## 文件内容
 
 `cr-write` 文件夹包含了读写 `cr0.ne` 位的 Linux Kernel Module
